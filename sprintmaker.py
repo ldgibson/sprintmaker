@@ -66,10 +66,11 @@ if __name__ == '__main__':
     cutoff = {}
 
     for pair in atom_pairs:
+        tpair = tuple(pair)
         if len(pair) == 1:
-            atoms = (tuple(pair)[0], tuple(pair)[0])
+            atoms = (tpair[0], tpair[0])
         else:
-            atoms = (tuple(pair)[0], tuple(pair)[1])
+            atoms = (tpair[0], tpair[1])
 
         cutoff[pair] = input("Cutoff for {}-{}: ".format(*atoms))
 
