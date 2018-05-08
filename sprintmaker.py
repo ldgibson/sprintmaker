@@ -138,3 +138,5 @@ if __name__ == '__main__':
         f.write("\n")
         f.write("\n")
         f.write("SPRINT MATRIX=cmat LABEL=SP\n")
+
+    print("Generated file: {}".format(outputf))
