@@ -9,7 +9,7 @@ Python script that automates generation of contact matrices for [SPRINT coordina
 
 # Usage
 ```
-$ python sprintmaker.py topology.pdb plumed.dat
+$ python sprintmaker.py h2o.pdb plumed.dat
 Cutoff for O-O: 2.20
 Cutoff for O-H: 2.00
 Cutoff for H-H: 2.00
