@@ -10,9 +10,9 @@ Python script that automates generation of contact matrices for [SPRINT coordina
 # Usage
 ```
 $ python sprintmaker.py h2o.pdb plumed.dat
-Cutoff for O-O: 2.20
-Cutoff for O-H: 2.00
-Cutoff for H-H: 2.00
+Cutoff for O-O: 0.220
+Cutoff for O-H: 0.200
+Cutoff for H-H: 0.200
 Generated file: plumed.dat
 $ cat plumed.dat
 DENSITY SPECIES=2 LABEL=H1
@@ -22,12 +22,12 @@ DENSITY SPECIES=1 LABEL=O1
 CONTACT_MATRIX ...
 ATOMS=H1,H2,O1
 
-SWITCH101={RATIONAL R_0=2.00}
-SWITCH102={RATIONAL R_0=2.00}
-SWITCH103={RATIONAL R_0=2.00}
-SWITCH202={RATIONAL R_0=2.00}
-SWITCH203={RATIONAL R_0=2.00}
-SWITCH303={RATIONAL R_0=2.20}
+SWITCH101={RATIONAL R_0=0.200}
+SWITCH102={RATIONAL R_0=0.200}
+SWITCH103={RATIONAL R_0=0.200}
+SWITCH202={RATIONAL R_0=0.200}
+SWITCH203={RATIONAL R_0=0.200}
+SWITCH303={RATIONAL R_0=0.220}
 
 LABEL=cmat
 ... CONTACT_MATRIX
